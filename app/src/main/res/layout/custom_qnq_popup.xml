@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0044beff">
+
+    <RelativeLayout
+        android:id="@+id/mainLyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/popup_background">
+
+
+        <RelativeLayout
+            android:id="@+id/radioLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <RadioGroup
+                android:id="@+id/radioGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/baslangicBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Başlanğıc"
+                    android:checked="true"
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+                <RadioButton
+                    android:id="@+id/terkibBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tərkib"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17sp"/>
+
+
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/edtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/radioLyt"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <TextView
+            android:id="@+id/notFoundTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTxt"
+            android:textSize="17sp"
+            android:textColor="#c0252525"
+            android:text="Heç bir nəticə tapılmadı"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_marginTop="50dp"/>
+
+
+        <ProgressBar
+            android:id="@+id/qnqPrg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edtTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
+
+        <ListView
+            android:id="@+id/myList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/edtTxt"
+            android:layout_marginTop="10dp"
+            android:footerDividersEnabled="false"
+            android:background="#f6eef1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:text=""/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/close_2"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

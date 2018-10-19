@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2637"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/informationLyt"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/closeImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/close_2"
+                android:clickable="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:id="@+id/transportTypeLyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/tranportTypeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#1D2637"
+                    android:layout_marginTop="10dp"
+                    android:text="TRANZIT:  " />
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/firsStation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:textSize="15sp"
+                    android:textColor="#737373"
+                    android:layout_toRightOf="@+id/tranportTypeTxt"
+                    android:text="Ələt" />
+
+                <TextView
+                    android:id="@+id/arrowTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@+id/firsStation"
+                    android:text="-" />
+
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/secondStation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="15sp"
+                    android:textColor="#737373"
+                    android:layout_marginTop="9dp"
+                    android:layout_toRightOf="@+id/arrowTxt"
+                    android:text="Böyük Kəsik" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transportTypeLyt">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/DistanceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#1D2637"
+                    android:layout_marginTop="2dp"
+                    android:text="MƏSAFƏ:   " />
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/currentDistanceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#737373"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@+id/DistanceTxt"
+                    android:text="200 Km" />
+
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/qnqTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DistanceTxt"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#1D2637"
+                    android:layout_marginTop="2dp"
+                    android:text="QNQ:   " />
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/currentQnqTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/currentDistanceTxt"
+                    android:textSize="15sp"
+                    android:textColor="#737373"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@+id/qnqTxt"
+                    android:text="52458645" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tabLyt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/informationLyt"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="2dp"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:id="@+id/doluLyt"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_calculate_lyt"
+                android:clickable="true">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/doluTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:text="DOLU"
+                    android:textColor="#ffffff" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bosLyt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/bosTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="17sp"
+                    android:text="BOŞ"
+                    android:textStyle="bold"
+                    android:textColor="#b1b1b1" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/totalLyt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:clickable="true">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/totalTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:textSize="17sp"
+                    android:text="YEKUN QİYMƏT"
+                    android:textColor="#b1b1b1" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/yekunLyt"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tabLyt"
+            android:layout_marginRight="3dp"
+            android:visibility="gone"
+            android:background="#ffffff">
+
+
+            <com.example.suleyman.project_a.FontTextView
+                android:id="@+id/yekunTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="YEKUN NƏTİCƏ"
+                android:textColor="#1D2637" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@+id/yekunTxt"
+                android:src="@drawable/arrow"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3D4E6C"
+                android:layout_below="@+id/yekunTxt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"/>
+
+            <LinearLayout
+                android:id="@+id/yekunLinearLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1">
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/AdyAlisTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#1D2637"
+                        android:layout_marginTop="12dp"
+                        android:text="ALIŞ:" />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/yekunAlisMpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#737373"
+                        android:layout_toRightOf="@+id/AdyAlisTxt"
+                        android:text="MPS - " />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/yekunAlisCurrentMpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#737373"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/yekunAlisMpsTxt"
+                        android:text="300$" />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/yekunAlisSpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/yekunAlisMpsTxt"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="7dp"
+                        android:layout_toRightOf="@+id/AdyAlisTxt"
+                        android:text="SPS - " />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/yekunAlisCurrentSpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/yekunAlisMpsTxt"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="#737373"
+                        android:layout_toRightOf="@+id/yekunAlisSpsTxt"
+                        android:text="250$" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1">
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/yekunSatisTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#1D2637"
+                        android:layout_marginTop="12dp"
+                        android:text="SATIŞ:" />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/yekunSatisMpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#737373"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/yekunSatisTxt"
+                        android:text="MPS - " />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/yekunSatisCurrentMpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#737373"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/yekunSatisMpsTxt"
+                        android:text="300$" />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/yekunSatisSpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/yekunSatisMpsTxt"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="7dp"
+                        android:layout_toRightOf="@+id/yekunSatisTxt"
+                        android:text="SPS - " />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/yekunSatisCurrentSpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/yekunSatisMpsTxt"
+                        android:textColor="#737373"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_toRightOf="@+id/yekunSatisSpsTxt"
+                        android:text="250$" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/emrlerLyt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/yekunLinearLyt"
+                android:background="@drawable/search_more_lyt_background"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp">
+
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="ƏMRLƏR VƏ TARİF SİYASƏTİ"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FFFFFF"/>
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/resultListView"
+            android:layout_below="@+id/tabLyt"
+            android:layout_above="@+id/umumiLyt"
+            android:divider="@null"
+            android:dividerHeight="0dp">
+
+
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/umumiLyt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/buttonLyt"
+            android:background="@drawable/background_dialog">
+
+
+            <com.example.suleyman.project_a.FontTextView
+                android:id="@+id/umumiTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="ÜMUMİ QİYMƏT"
+                android:textColor="#1D2637" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@+id/umumiTxt"
+                android:src="@drawable/arrow"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3D4E6C"
+                android:layout_below="@+id/umumiTxt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1">
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/umumiAlisTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#1D2637"
+                        android:layout_marginTop="12dp"
+                        android:text="ALIŞ:" />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/AdyAlisMpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@+id/umumiAlisTxt"
+                        android:text="MPS - " />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/umumiAlisCurrentMpsTxt"
+                        android:layout_width="wrap_content"
+                        android:textColor="#737373"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/AdyAlisMpsTxt"
+                        android:text="300$" />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/AdyAlisSpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/AdyAlisMpsTxt"
+                        android:layout_marginLeft="7dp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/umumiAlisTxt"
+                        android:text="SPS - " />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/umumiAlisCurrentSpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/AdyAlisMpsTxt"
+                        android:textColor="#737373"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/AdyAlisSpsTxt"
+                        android:text="250$" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1">
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/AdySatisTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#1D2637"
+                        android:layout_marginTop="12dp"
+                        android:text="SATIŞ:" />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/AdySatisMpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="7dp"
+                        android:textColor="#737373"
+                        android:layout_toRightOf="@+id/AdySatisTxt"
+                        android:text="MPS - " />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/umumiSatisCurrentMpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#737373"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/AdySatisMpsTxt"
+                        android:text="300$" />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/AdySatisSpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/AdySatisMpsTxt"
+                        android:layout_marginLeft="7dp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/AdySatisTxt"
+                        android:text="SPS - " />
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/umumiSatisCurrentSpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/AdySatisMpsTxt"
+                        android:textColor="#737373"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/AdySatisSpsTxt"
+                        android:text="250$" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/buttonLyt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:id="@+id/sendBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:clickable="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/calculate_pressed">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/closeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginRight="1dp"
+                    android:textColor="#FFFFFF"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:text="GÖNDƏR" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

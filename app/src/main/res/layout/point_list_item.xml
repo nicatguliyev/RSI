@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="184dp"
+    android:background="#1d2636">
+
+
+ <LinearLayout
+     android:id="@+id/firstLinLyt"
+     android:layout_width="match_parent"
+     android:layout_height="60dp"
+     android:orientation="horizontal"
+     android:background="#3d4c68"
+     android:weightSum="5">
+
+
+     <RelativeLayout
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:layout_weight="1">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Rejim"
+             android:textColor="#FFFFFF"
+             android:textStyle="bold"
+             android:layout_centerInParent="true"
+             android:textSize="16sp"/>
+
+         <View
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#FFFFFF"
+             android:layout_alignParentRight="true"/>
+
+         <View
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#FFFFFF"
+             android:layout_alignParentLeft="true"/>
+
+     </RelativeLayout>
+
+     <RelativeLayout
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:layout_weight="2">
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:text="Vaqon"
+             android:textColor="#FFFFFF"
+             android:textStyle="bold"
+
+             android:gravity="center"/>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="#FFFFFF"
+             android:layout_centerInParent="true"/>
+
+         <View
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#FFFFFF"
+             android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dolu"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FFFFFF"/>
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Boş"
+                android:layout_weight="1"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+
+     </RelativeLayout>
+
+
+     <RelativeLayout
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:layout_weight="1">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Kont. sayı"
+             android:textColor="#FFFFFF"
+             android:gravity="center"
+             android:textStyle="bold"
+             android:layout_centerInParent="true"
+             android:textSize="16sp"/>
+
+         <View
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#FFFFFF"
+             android:layout_alignParentRight="true"/>
+
+     </RelativeLayout>
+
+
+     <RelativeLayout
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:layout_weight="1">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Cəmi"
+             android:textColor="#FFFFFF"
+             android:textStyle="bold"
+             android:layout_centerInParent="true"
+             android:textSize="16sp"/>
+         <View
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#FFFFFF"
+             android:layout_alignParentRight="true"/>
+
+     </RelativeLayout>
+
+
+ </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/firstLinLyt"/>
+
+    <LinearLayout
+        android:id="@+id/secondLinLyt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="5"
+        android:layout_below="@+id/firstLinLyt">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İdxal"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentRight="true"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/idxalDolu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1720/17"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#3d4c68"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/idxalBos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="8"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#3d4c68"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/idxalKont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/idxalCem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3d4c68"
+        android:layout_below="@+id/secondLinLyt"/>
+
+
+    <LinearLayout
+        android:id="@+id/thirdLinLyt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="5"
+        android:layout_below="@+id/view1">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İxrac"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentRight="true"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/ixracDolu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1720/17"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#3d4c68"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/ixracBos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="8"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#3d4c68"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ixracKont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ixracCem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3d4c68"
+        android:layout_below="@+id/thirdLinLyt"/>
+
+
+    <LinearLayout
+        android:id="@+id/forthLinLyt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="5"
+        android:layout_below="@+id/view2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tranzit"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentRight="true"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/tranzitDolu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1720/17"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#3d4c68"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tranzitBos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="8"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#3d4c68"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tranzitKont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tranzitCem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3d4c68"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3d4c68"
+        android:layout_below="@+id/forthLinLyt"/>
+
+
+
+</RelativeLayout>

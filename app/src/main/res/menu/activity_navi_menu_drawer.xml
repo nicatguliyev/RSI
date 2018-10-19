@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/homt"
+            android:title="Ana səhifə" />
+        <item
+            android:id="@+id/nav_plan"
+            android:icon="@drawable/news"
+            android:visible="false"
+            android:title="Plan" />
+        <item
+            android:id="@+id/nav_daily"
+            android:icon="@drawable/d"
+            android:title="Günlük Hesabat" />
+
+        <item
+            android:id="@+id/nav_monthly"
+            android:icon="@drawable/monthly"
+            android:title="Ayliq Hesabat" />
+
+        <item
+            android:id="@+id/nav_prognose"
+            android:icon="@drawable/news"
+            android:visible="false"
+            android:title="Proqnoz" />
+        <item
+            android:id="@+id/nav_in_search"
+            android:icon="@drawable/search_menu"
+            android:title="Intellektual Axtarış" />
+
+        <item
+            android:id="@+id/nav_yuk_info"
+            android:icon="@drawable/ic_info_menu"
+            android:title="Yük İnfo" />
+
+        <item
+            android:id="@+id/nav_graf"
+            android:icon="@drawable/increase"
+            android:title="Qrafik" />
+
+        <item
+            android:id="@+id/calculator"
+            android:icon="@drawable/icon_calc"
+            android:title="Kalkulyator" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/share"
+            android:visible="false"
+            android:title="Paylaş" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/feedback"
+            android:title="Geri Bildiriş" />
+        <item
+            android:id="@+id/nav_Setting"
+            android:icon="@drawable/sett"
+            android:title="Parametrlər" />
+    </group>
+
+
+</menu>

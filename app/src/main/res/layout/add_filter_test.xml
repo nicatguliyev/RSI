@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.example.suleyman.project_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/white_ground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonPlus10"
+            android:layout_marginTop="50dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/white_ground"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+
+                <LinearLayout
+                    android:id="@+id/firstLinearLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Daşıma Vasitəsi"
+                            android:textColor="#908d7f" />
+
+                    <Spinner
+                        android:background="@drawable/orange_btn_arrow"
+                        android:id="@+id/cmb_vgtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:drawableRight="@drawable/search"
+                        android:hint="YHN Kod"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/textView9"
+                        android:textAlignment="center"
+                        android:textColor="@color/bgcolor"
+                        android:textColorHint="#fed290"
+                        foo:customFont="fonts/Cera PRO.ttf" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Yükləmə növü"
+                            android:textColor="#908d7f" />
+
+                        <Spinner
+                            android:background="@drawable/orange_btn_arrow"
+                            android:id="@+id/cmb_ltype"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:drawableRight="@drawable/search"
+                            android:hint="YHN Kod"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/textView12"
+                            android:textAlignment="center"
+                            android:textColor="@color/bgcolor"
+                            android:textColorHint="#fed290"
+                            foo:customFont="fonts/Cera PRO.ttf" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondLinearLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/firstLinearLyt"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Rüb"
+                            android:textColor="#908d7f" />
+
+                        <Spinner
+                            android:background="@drawable/orange_btn_arrow"
+                            android:id="@+id/cmb_qttype"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:drawableRight="@drawable/search"
+                            android:hint="YHN Kod"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/textView11"
+                            android:textAlignment="center"
+                            android:textColor="@color/bgcolor"
+                            android:textColorHint="#fed290"
+                            foo:customFont="fonts/Cera PRO.ttf" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Daşıma Növü"
+                            android:textColor="#908d7f" />
+
+                        <Spinner
+                            android:background="@drawable/orange_btn_arrow"
+                            android:id="@+id/cmb_rtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:drawableRight="@drawable/search"
+                            android:hint="YHN Kod"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/textView13"
+                            android:textAlignment="center"
+                            android:textColor="@color/bgcolor"
+                            android:textColorHint="#fed290"
+                            foo:customFont="fonts/Cera PRO.ttf" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/thirdLinearLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/secondLinearLyt"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Mənsubiyyət"
+                            android:textColor="#908d7f" />
+
+                        <Spinner
+                            android:background="@drawable/orange_btn_arrow"
+                            android:id="@+id/cmb_owner"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:drawableRight="@drawable/search"
+                            android:hint="YHN Kod"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/textView14"
+                            android:textAlignment="center"
+                            android:textColor="@color/bgcolor"
+                            android:textColorHint="#fed290"
+                            foo:customFont="fonts/Cera PRO.ttf" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Mənşəyi"
+                            android:textColor="#908d7f" />
+
+                        <Spinner
+                            android:background="@drawable/orange_btn_arrow"
+                            android:id="@+id/cmb_origin"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:drawableRight="@drawable/search"
+                            android:hint="YHN Kod"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/textView15"
+                            android:textAlignment="center"
+                            android:textColor="@color/bgcolor"
+                            android:textColorHint="#fed290"
+                            foo:customFont="fonts/Cera PRO.ttf" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/fourthLinearLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/thirdLinearLyt"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Qiymət tipi"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#908d7f" />
+
+
+                    <Spinner
+                        android:background="@drawable/orange_btn_arrow"
+                        android:id="@+id/cmb_ptype"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:drawableRight="@drawable/search"
+                        android:hint="YHN Kod"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/textView16"
+                        android:textAlignment="center"
+                        android:textColor="@color/bgcolor"
+                        android:textColorHint="#fed290"
+                        foo:customFont="fonts/Cera PRO.ttf" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Axtarış tipi"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#908d7f" />
+
+
+                        <Spinner
+                            android:background="@drawable/orange_btn_arrow"
+                            android:id="@+id/cmb_searchtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:drawableRight="@drawable/search"
+                            android:hint="YHN Kod"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/textView17"
+                            android:textAlignment="center"
+                            android:textColor="@color/bgcolor"
+                            android:textColorHint="#fed290"
+                            foo:customFont="fonts/Cera PRO.ttf" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fifthLinearLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/fourthLinearLyt"
+                    android:weightSum="4">
+
+
+
+                    <EditText
+                        android:id="@+id/minWeightEdt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Kütlə(Min)"
+                        android:inputType="number"
+                        android:layout_weight="2"/>
+
+                    <EditText
+                        android:id="@+id/maxWeightEdt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Kütlə(Max)"
+                        android:inputType="number"
+                        android:layout_weight="2"/>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/yearCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/fifthLinearLyt"
+                    android:text="2016" />
+
+
+                <com.example.suleyman.project_a.ButtonPlus
+                    android:id="@+id/btn_ok"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/green_btn"
+                    android:drawableRight="@drawable/ok"
+                    android:paddingRight="10dp"
+                    android:text="NƏTİCƏ"
+                    android:textColor="@color/bgcolor"
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:layout_below="@+id/fifthLinearLyt"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="36dp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/close_btn"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <com.example.suleyman.project_a.TextViewPlus
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="close"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            foo:customFont="fonts/Cera PRO Bold.ttf"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignBaseline="@+id/yes"
+            android:layout_alignBottom="@+id/yes"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

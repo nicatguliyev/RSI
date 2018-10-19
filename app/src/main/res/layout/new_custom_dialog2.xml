@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:background="#a51d2637"
+  android:layout_height="match_parent">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/white_ground"
+      android:layout_centerInParent="true"
+      android:layout_marginRight="30dp">
+
+      <RelativeLayout
+        android:id="@+id/closeLyt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:text="CLOSE"
+          android:layout_marginRight="40dp"
+          android:layout_marginTop="3dp"
+          android:textSize="15sp"
+          android:textColor="#000000"/>
+
+        <ImageView
+          android:id="@+id/closeImg"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_alignParentRight="true"
+          android:padding="3dp"
+          android:src="@drawable/close_2"
+          android:clickable="true"
+          />
+
+      </RelativeLayout>
+
+      <RadioGroup
+        android:id="@+id/searchTypeLyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/closeLyt"
+        android:orientation="horizontal">
+
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:text="Axt. tipi:"
+          android:textColor="#000000"/>
+
+        <RadioButton
+          android:id="@+id/beginsBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Başlanğıc"
+          android:checked="true"
+          android:textColor="#000000"/>
+
+        <RadioButton
+          android:id="@+id/containsBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Tərkib"
+          android:textColor="#000000"/>
+
+      </RadioGroup>
+
+      <RelativeLayout
+        android:id="@+id/edtTxtLyt"
+        android:layout_below="@+id/searchTypeLyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <com.example.suleyman.project_a.FontEditText
+          android:id="@+id/dialogEdtText"
+          android:layout_width="match_parent"
+          android:textStyle="italic"
+          android:layout_marginLeft="5dp"
+          android:singleLine="true"
+          android:layout_height="wrap_content"
+          android:hint="Məlumatı daxil edin"/>
+
+
+        <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:id="@+id/clearTxt"
+          android:clickable="true"
+          android:background="@color/cpb_white"
+          android:layout_alignParentRight="true"
+          android:layout_marginTop="3dp"
+          android:src="@drawable/ic_clear_text"/>
+
+      </RelativeLayout>
+
+      <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="#658bcf"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/edtTxtLyt">
+      </ListView>
+
+      <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/qnqPrgbar"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+  </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2636"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1D2636"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/QnqLyt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/infoTxt"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/qnqEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@android:color/transparent"
+                    android:hint="QNQ kodu"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="#ffffff"
+                    android:textColorHighlight="#3d4c68"
+                    android:textColorHint="#9090a1"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/qnqSearchImg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/pressed_layout"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_white_search" />
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#3D4E6C" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/marsrut1Lyt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/QnqLyt"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/m1EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Marşrut 1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textColorHighlight="#3d4c68"
+                    android:textColorHint="#9090a1"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/m1SearchImg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/pressed_layout"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_white_search" />
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#3D4E6C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/m2Lyt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/marsrut1Lyt"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/m2EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Marşrut 2"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textColorHighlight="#3d4c68"
+                    android:textColorHint="#9090a1"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/m2SearchImg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/pressed_layout"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_white_search" />
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#3D4E6C" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linLyt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/m2Lyt"
+                android:layout_alignRight="@+id/m2Lyt"
+                android:layout_below="@+id/m2Lyt"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:id="@+id/rejimType"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/orange_btn_arrow"
+                    android:textColor="#FFFFFF" />
+
+                <RelativeLayout
+                    android:id="@+id/prepriceLyt"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/calculate_pressed"
+                    android:clickable="true">
+
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="ƏVVƏLKİ QİYMƏT"
+                        android:textColor="#FFFFFF" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/filterLyt"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/QnqLyt"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/calculate_pressed"
+                    android:clickable="true">
+
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="FİLTER"
+                        android:textColor="#FFFFFF" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/resultLyt"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/linLyt1"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculate_pressed"
+                android:clickable="true">
+
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="NƏTİCƏ"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tabLyt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/resultLyt"
+                android:background="#3d4c68"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="1 Tonun Qiymeti"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:text="Cəmi Alış"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:text="Cəmi Satış"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tonnajTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Cəmi Tonnaj"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tabLyt">
+
+                <ListView
+                    android:id="@+id/resultList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tabLyt" />
+
+                <ProgressBar
+                    android:id="@+id/resultPrg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/tabLyt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <include
+            android:id="@+id/rightLayout"
+            layout="@layout/intellektual_right_layout_forlarge"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>

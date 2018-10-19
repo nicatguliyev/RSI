@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:foo="http://schemas.android.com/apk/res/com.example.suleyman.project_a"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp">
+
+
+
+        <com.example.suleyman.project_a.TextViewPlus
+            android:id="@+id/total2017"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingLeft="5dp"
+            android:textSize="13sp"
+            android:text="TextView"
+            android:textColor="@color/bgcolor2"
+            android:layout_alignTop="@+id/button4"
+            android:layout_toRightOf="@+id/button4"
+            android:layout_toEndOf="@+id/button4"
+            android:layout_alignBottom="@+id/button4"
+    />
+
+        <com.example.suleyman.project_a.TextViewPlus
+            android:id="@+id/headerGR"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="TextView"
+            foo:customFont="fonts/Cera PRO.ttf"
+            android:textColor="@color/bgcolor"
+            android:textSize="15sp" />
+
+        <com.example.suleyman.project_a.ButtonPlus
+            android:id="@+id/button4"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/total2016"
+            android:layout_toEndOf="@+id/total2016"
+            android:layout_toRightOf="@+id/total2016"
+            android:background="@drawable/dateedit_shape"
+            android:textAlignment="center"
+            android:enabled="false"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/cpb_white"
+            android:text="2017"
+            android:textSize="13sp"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <com.example.suleyman.project_a.ButtonPlus
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@drawable/year_btn"
+            android:enabled="false"
+            android:textAlignment="center"
+            android:text="2016"
+            android:textSize="13sp"
+            android:textColor="@color/cpb_white"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/headerGR"
+            android:layout_alignStart="@+id/headerGR"
+            android:layout_marginBottom="14dp" />
+
+        <com.example.suleyman.project_a.TextViewPlus
+            android:id="@+id/total2016"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textSize="13sp"
+            android:paddingTop="2dp"
+            android:text="TextView"
+            android:textColor="@color/bgcolor2"
+            android:layout_alignTop="@+id/button"
+            android:layout_toRightOf="@+id/button"
+            android:layout_toEndOf="@+id/button"
+            android:layout_alignBottom="@+id/button" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

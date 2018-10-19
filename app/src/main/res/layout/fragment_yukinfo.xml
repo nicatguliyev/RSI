@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="match_parent"
+    android:background="#1D2636">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.suleyman.project_a.FontTextView
+      android:id="@+id/infoTxt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:text="YÜK HAQQİNDA MƏLUMAT"
+      android:textColor="#FFFFFF"
+      android:textSize="21sp" />
+
+
+    <RelativeLayout
+      android:id="@+id/QnqLyt"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_below="@+id/infoTxt"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:focusable="true"
+      android:focusableInTouchMode="true">
+
+      <com.example.suleyman.project_a.FontEditText
+        android:id="@+id/qnqEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/qnq_hint"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#9090a1"
+        android:textSize="15sp" />
+
+      <ImageView
+        android:id="@+id/qnqSearchImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pressed_layout"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_white_search" />
+
+
+      <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3D4E6C" />
+    </RelativeLayout>
+
+    <Spinner
+      android:id="@+id/infoType"
+      android:layout_width="120dp"
+      android:layout_height="30dp"
+      android:layout_below="@+id/QnqLyt"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/orange_btn_arrow"
+      android:textColor="#FFFFFF" />
+
+    <RelativeLayout
+      android:id="@+id/searchLyt"
+      android:layout_width="150dp"
+      android:layout_height="30dp"
+      android:layout_below="@+id/QnqLyt"
+      android:layout_marginBottom="15dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_toRightOf="@+id/infoType"
+      android:background="@drawable/calculate_pressed"
+      android:clickable="true">
+
+
+      <com.example.suleyman.project_a.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="AXTAR"
+        android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <View
+      android:id="@+id/dividerView"
+      android:layout_width="wrap_content"
+      android:layout_height="1dp"
+      android:layout_below="@+id/searchLyt"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:background="#3b4584" />
+
+
+    <ScrollView
+      android:id="@+id/infoScroll"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_below="@+id/searchLyt">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+          android:id="@+id/firstLyt"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:layout_marginTop="10dp">
+
+
+          <com.example.suleyman.project_a.FontTextView
+            android:id="@+id/umumiTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Ümumi Daşınma:"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+          <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp"
+            android:background="#38395c" />
+
+          <View
+            android:layout_width="6dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#38395c" />
+
+          <View
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="37dp"
+            android:background="#38395c" />
+
+          <View
+            android:layout_width="14dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="54dp"
+            android:background="#38395c" />
+
+          <View
+            android:layout_width="14dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="73dp"
+            android:background="#38395c" />
+
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/umumiTxt"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/umumiTxt"
+            android:text="132,685.00"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+          <TextView
+            android:id="@+id/adyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/umumiTxt"
+            android:layout_below="@+id/umumiTxt"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:text="ADYExpress:"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/adyTxt"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/adyTxt"
+            android:text="80,982.00 / 75%"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+          <TextView
+            android:id="@+id/transformTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/adyTxt"
+            android:layout_below="@+id/adyTxt"
+            android:text="Transform:"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adyTxt"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/transformTxt"
+            android:text="30,560.00 / 15%"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+          <TextView
+            android:id="@+id/unknownTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/transformTxt"
+            android:layout_below="@+id/transformTxt"
+            android:text="Təyin edilməyib:"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transformTxt"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/unknownTxt"
+            android:text="22,365.00 / 10%"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+          <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#3b4584" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+          android:id="@+id/secondLyt"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/firstLyt">
+
+
+          <com.example.suleyman.project_a.FontTextView
+            android:id="@+id/masrutTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="MAŞRUTLAR"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+          <ListView
+            android:id="@+id/masrutList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/masrutTxt"
+            android:visibility="gone"></ListView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+          android:id="@+id/thirdLyt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/secondLyt"
+          android:layout_marginTop="5dp">
+
+
+          <com.example.suleyman.project_a.FontTextView
+            android:id="@+id/rubTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="RÜBLƏR ÜZRƏ"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+
+          <RelativeLayout
+            android:id="@+id/rubLyt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/rubTxt"
+            android:visibility="gone">
+
+            <com.example.suleyman.project_a.FontTextView
+              android:id="@+id/firstRub"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:text="I rüb:"
+              android:textColor="#FFFFFF"
+              android:textSize="14sp" />
+
+
+            <TextView
+              android:id="@+id/firstRubTxt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="10dp"
+              android:layout_toRightOf="@+id/firstRub"
+              android:text="35,456.00 / 28 %"
+              android:textColor="#FFFFFF"
+              android:textSize="14sp" />
+
+
+            <com.example.suleyman.project_a.FontTextView
+              android:id="@+id/secondRub"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/firstRub"
+              android:layout_marginTop="5dp"
+              android:text="II rüb:"
+              android:textColor="#FFFFFF"
+              android:textSize="14sp" />
+
+
+            <TextView
+              android:id="@+id/secondRubTxt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@+id/secondRub"
+              android:layout_marginLeft="5dp"
+              android:layout_toRightOf="@+id/secondRub"
+              android:text="35,456.00 / 32%"
+              android:textColor="#FFFFFF"
+              android:textSize="14sp" />
+
+            <com.example.suleyman.project_a.FontTextView
+              android:id="@+id/thirdRub"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/secondRub"
+              android:layout_marginTop="5dp"
+              android:text="III rüb:"
+              android:textColor="#FFFFFF"
+              android:textSize="14sp" />
+
+
+            <TextView
+              android:id="@+id/thirdRubTxt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@+id/thirdRub"
+              android:layout_marginLeft="5dp"
+              android:layout_toRightOf="@+id/thirdRub"
+              android:text="35,456.00 / 30%"
+              android:textColor="#FFFFFF"
+              android:textSize="14sp" />
+
+
+            <com.example.suleyman.project_a.FontTextView
+              android:id="@+id/forthRub"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/thirdRub"
+              android:layout_marginTop="5dp"
+              android:text="IV rüb:"
+              android:textColor="#FFFFFF"
+              android:textSize="14sp" />
+
+
+            <TextView
+              android:id="@+id/forthRubTxt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@+id/forthRub"
+              android:layout_marginLeft="5dp"
+              android:layout_toRightOf="@+id/forthRub"
+              android:text="35,456.00 / 10%"
+              android:textColor="#FFFFFF"
+              android:textSize="14sp" />
+
+
+          </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:id="@+id/forthLyt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/thirdLyt"
+          android:layout_marginTop="5dp">
+
+
+          <com.example.suleyman.project_a.FontTextView
+            android:id="@+id/aylarTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="AYLAR ÜZRƏ"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+          <ListView
+            android:id="@+id/aylarList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aylarTxt"
+            android:visibility="gone">
+
+          </ListView>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+          android:id="@+id/fifthLyt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/forthLyt"
+          android:layout_marginTop="5dp">
+
+
+          <com.example.suleyman.project_a.FontTextView
+            android:id="@+id/dasimaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="DAŞIMA VASİTƏLƏRİ"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+          <ListView
+            android:id="@+id/dasimaList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dasimaTxt"
+            android:visibility="gone">
+
+          </ListView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:id="@+id/sixthLyt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/fifthLyt"
+          android:layout_marginTop="5dp">
+
+
+          <com.example.suleyman.project_a.FontTextView
+            android:id="@+id/clientTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="MÜŞTƏRİLƏR ÜZRƏ"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+          <ListView
+            android:id="@+id/clientList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clientTxt"
+            android:visibility="gone">
+
+          </ListView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:id="@+id/seventhLyt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/sixthLyt"
+          android:layout_marginTop="5dp">
+
+
+          <com.example.suleyman.project_a.FontTextView
+            android:id="@+id/emrTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="ƏMRLƏR"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+          <ListView
+            android:id="@+id/emrList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emrTxt"
+            android:visibility="gone">
+
+          </ListView>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="20dp">
+
+        </RelativeLayout>
+
+      </LinearLayout>
+
+
+    </ScrollView>
+
+
+  </RelativeLayout>
+
+
+</FrameLayout>

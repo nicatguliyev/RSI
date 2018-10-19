@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+  <TextView
+    android:id="@+id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MÜŞTƏRİ: "
+    android:textStyle="bold|italic"
+    android:textColor="#000000"
+    android:layout_marginLeft="10dp"/>
+
+  <TextView
+    android:id="@+id/musteriNameTxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/text1"
+    android:text="FILANKESOV FILANKES"
+    android:textColor="#333564"
+    android:textStyle="bold|italic"/>
+
+
+  <TextView
+    android:id="@+id/text2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/text1"
+    android:layout_below="@+id/musteriNameTxt"
+    android:text="1 TONUN QIYMƏTİ: "
+    android:textColor="#000000"
+    android:textStyle="bold|italic"/>
+
+  <TextView
+    android:id="@+id/sNo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/text2"
+    android:layout_below="@+id/musteriNameTxt"
+    android:text="1 TONUN QIYMƏTİ: "
+    android:textColor="#333564"
+    android:textStyle="bold|italic"/>
+
+  <TextView
+    android:id="@+id/text3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text2"
+    android:text="CƏMİ ALIŞ: "
+    android:layout_alignLeft="@+id/text1"
+    android:textColor="#000000"
+    android:textStyle="bold|italic"/>
+
+  <TextView
+    android:id="@+id/product"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/text3"
+    android:layout_below="@+id/text2"
+    android:text="1 TONUN QIYMƏTİ: "
+    android:textColor="#333564"
+    android:textStyle="bold|italic"/>
+
+  <TextView
+    android:id="@+id/text4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text3"
+    android:text="CƏMİ SATIŞ: "
+    android:layout_alignLeft="@+id/text1"
+    android:textColor="#000000"
+    android:textStyle="bold|italic"/>
+
+  <TextView
+    android:id="@+id/category"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/text4"
+    android:layout_below="@+id/text3"
+    android:text="1 TONUN QIYMƏTİ: "
+    android:textColor="#333564"
+    android:textStyle="bold|italic"/>
+
+  <TextView
+    android:id="@+id/text5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text4"
+    android:text="CƏMİ TONNAJ: "
+    android:layout_alignLeft="@+id/text1"
+    android:textColor="#000000"
+    android:textStyle="bold|italic"/>
+
+  <TextView
+    android:id="@+id/price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/text5"
+    android:layout_below="@+id/text4"
+    android:text="1 TONUN QIYMƏTİ: "
+    android:textColor="#333564"
+    android:textStyle="bold|italic"/>
+
+
+
+
+</RelativeLayout>

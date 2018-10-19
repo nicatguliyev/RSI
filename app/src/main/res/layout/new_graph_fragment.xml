@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:id="@+id/root1"
+  android:clickable="true"
+  android:focusableInTouchMode="true"
+  android:layout_height="match_parent"
+  android:background="#1D2636">
+
+
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1D2636">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/edtLyt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="9">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <EditText
+                android:id="@+id/QnqEdt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:hint="QNQ"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textColorHint="#6cffffff"
+                android:layout_marginLeft="15dp" />
+
+            <ImageView
+                android:id="@+id/searchImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_white_search"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/pressed_layout"
+                android:clickable="true"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/orange_btn_arrow"
+            android:textColor="#FFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/searchLyt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/calculate_pressed"
+            android:clickable="true">
+
+
+            <com.example.suleyman.project_a.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="AXTAR"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/compareLyt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/calculate_pressed"
+            android:clickable="true">
+
+
+            <com.example.suleyman.project_a.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="MUQAYİSƏ"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_graph_right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edtLyt"
+        app:tabTextColor="#FFFFFF"
+        app:tabSelectedTextColor="#fcb900"
+        android:background="@color/bar_gray">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs">
+
+    </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+    <include
+        android:id="@+id/rightLayout"
+        layout="@layout/graph_right_layout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+</android.support.v4.widget.DrawerLayout>
+
+
+</FrameLayout>

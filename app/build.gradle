@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.suleyman.project_a"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/httpclient-4.5.3.jar')
+    compile files('libs/httpcore-4.4.6.jar')
+    compile files('libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+    //  compile files('libs/junit-4.12.jar')
+    compile files('libs/junit-4.12.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/mail.jar')
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support:design:25.3.0'
+    compile 'com.android.support:support-v4:25.3.0'
+    compile 'com.jjoe64:graphview:4.2.1'
+    compile 'com.eyalbira.loadingdots:loading-dots:1.0.2'
+    compile 'com.android.support:support-vector-drawable:25.3.0'
+    compile 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
+    compile 'com.klinkerapps:sliding-activity:1.4.4'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+    compile 'org.apache.commons:commons-io:1.3.2'
+    compile 'com.android.volley:volley:1.1.0'
+    compile 'com.itextpdf:itextg:5.5.10'
+    compile 'junit:junit:4.12'
+}
+android {
+    repositories {
+        jcenter { url "http://jcenter.bintray.com/" }
+        maven { url "https://jitpack.io" }
+        maven { url 'http://repo1.maven.org/maven2' }
+        mavenCentral()
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/MANIFEST.MF'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'junit/runner/smalllogo.gif'
+        exclude 'junit/runner/logo.gif'
+        exclude 'LICENSE-junit.txt'
+    }
+
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '25.3.0'
+                }
+            }
+        }
+    }
+
+}

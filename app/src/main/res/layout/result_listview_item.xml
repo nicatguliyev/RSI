@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tabLyt"
+        android:layout_marginRight="3dp"
+        android:background="#ffffff">
+
+
+        <com.example.suleyman.project_a.FontTextView
+            android:id="@+id/expenseNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="KASPAR"
+            android:textColor="#1D2637" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/expenseNameTxt"
+            android:src="@drawable/arrow"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3D4E6C"
+            android:layout_below="@+id/expenseNameTxt"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/alisTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#1D2637"
+                    android:layout_marginTop="18dp"
+                    android:text="ALIŞ:" />
+
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/buyPriceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/AdyAlisMpsTxt"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@+id/alisTxt"
+                    android:text="250$"
+                    android:textColor="#737373"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/satisTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#1D2637"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="18dp"
+                    android:text="SATIŞ:" />
+
+
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/sellPriceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@+id/satisTxt"
+                    android:textColor="#737373"
+                    android:text="250$" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

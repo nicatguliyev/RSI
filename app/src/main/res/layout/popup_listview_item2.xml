@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/rootLyt"
+    android:layout_height="130dp">
+
+    <TextView
+        android:id="@+id/mehsul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neft"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:textColor="#1d2636"
+        android:layout_marginLeft="12dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/yearLyt"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_below="@+id/mehsul"
+        android:background="#c31d2636"
+        android:weightSum="7.5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="EKSPEDITOR"
+            android:layout_weight="2.5"
+            android:textColor="#ffffff"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/firstYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="2016"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/secondYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="2017"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="FƏRQ"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#344666"
+        android:layout_below="@+id/adyLyt"
+        android:layout_alignLeft="@+id/adyTxt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#344666"
+        android:layout_below="@+id/ttLyt"
+        android:layout_alignLeft="@+id/adyLyt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"/>
+
+    <ImageView
+        android:id="@+id/adyImage"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/up_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/adyLyt"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/ttImage"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/down_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ttLyt"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/cemImage"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/up_arrow"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/cemLyt"
+        android:layout_marginRight="5dp"/>
+
+    <ImageView
+        android:id="@+id/totalImage"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/up_arrow"
+        android:layout_toRightOf="@+id/meh"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="3dp"/>
+
+    <LinearLayout
+        android:id="@+id/adyLyt"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:weightSum="7.5"
+        android:layout_below="@+id/yearLyt"
+        android:layout_toRightOf="@+id/adyTxt">
+
+        <TextView
+            android:id="@+id/adyTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="ADY EXPRESS"
+            android:layout_marginTop="3dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/mehsul"
+            android:layout_marginLeft="12dp" />
+
+        <TextView
+            android:id="@+id/adyFirstYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="10 940"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/adySecondYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="10 940"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/adyDiff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="10 940"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ttLyt"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:weightSum="7.5"
+        android:layout_below="@+id/adyLyt"
+        android:layout_toRightOf="@+id/adyTxt">
+
+        <TextView
+            android:id="@+id/ttTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="TRANS-TORQ"
+            android:textColor="#000000"
+            android:layout_below="@+id/adyTxt"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:id="@+id/ttFirstYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="10 940"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ttSecondYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="10 940"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ttDiff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="10 940"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cemLyt"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:weightSum="7.5"
+        android:layout_below="@+id/ttLyt"
+        android:layout_toRightOf="@+id/adyTxt">
+
+        <TextView
+            android:id="@+id/cemTxt"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:text="CƏM"
+            android:textColor="#000000"
+            android:layout_below="@+id/ttTxt"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="1dp"/>
+
+        <TextView
+            android:id="@+id/cemFirstYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:text="10 940"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/cemSecondYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:text="10 940"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/cemDiff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="10 940"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#44607c"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

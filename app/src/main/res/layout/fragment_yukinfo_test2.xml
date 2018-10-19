@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:id="@+id/root1"
+  android:clickable="true"
+  android:focusableInTouchMode="true"
+  android:layout_height="match_parent"
+  android:background="#1D2636">
+
+
+  <RelativeLayout
+    android:id="@+id/relativeLayoutmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1d2636">
+
+
+    <TextView
+      android:id="@+id/infoTxt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:text="YÜK HAQQİNDA MƏLUMAT"
+      android:textColor="#FFFFFF"
+      android:textSize="21sp" />
+
+
+    <RelativeLayout
+      android:id="@+id/umumLytLarge"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:background="#38395c"
+      android:visibility="gone">
+
+      <TextView
+        android:id="@+id/umumiLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="ÜMUMİ DAŞINMA"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+      <TextView
+        android:id="@+id/vaqon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/umumiLarge"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="VAQON: "
+        android:textColor="#FFFFFF" />
+
+      <TextView
+        android:id="@+id/vaqon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/umumiLarge"
+        android:layout_toRightOf="@+id/vaqon1"
+        android:textStyle="bold"
+        android:text="347 582 ton / 12 435 eded"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+      <TextView
+        android:id="@+id/kont1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vaqon1"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:text="KONTEYNER: "
+        android:textColor="#FFFFFF" />
+
+      <TextView
+        android:id="@+id/kont2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vaqon1"
+        android:layout_toRightOf="@+id/kont1"
+        android:text="435 eded"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+      <RelativeLayout
+        android:id="@+id/searchLyt2"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/year"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/calculate_pressed"
+        android:clickable="true">
+
+
+        <com.example.suleyman.project_a.FontTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="AXTAR"
+          android:textColor="#FFFFFF" />
+
+      </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+      android:id="@+id/QnqLyt"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_below="@+id/infoTxt"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:focusable="true"
+      android:focusableInTouchMode="true">
+
+      <EditText
+        android:id="@+id/qnqEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/qnq_hint"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#9090a1"
+        android:textSize="15sp" />
+
+      <ImageView
+        android:id="@+id/qnqSearchImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pressed_layout"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_white_search" />
+
+
+      <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3D4E6C" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonsLyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/QnqLyt"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+      <Spinner
+          android:id="@+id/infoType"
+          android:layout_width="120dp"
+          android:layout_height="30dp"
+          android:layout_below="@+id/QnqLyt"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/orange_btn_arrow"
+          android:textColor="#FFFFFF" />
+
+      <Spinner
+          android:id="@+id/year"
+          android:layout_width="120dp"
+          android:layout_height="30dp"
+          android:layout_below="@+id/QnqLyt"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp"
+          android:layout_toRightOf="@+id/infoType"
+          android:background="@drawable/orange_btn_arrow"
+          android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+      android:id="@+id/searchLyt"
+      android:layout_width="120dp"
+      android:layout_height="30dp"
+      android:layout_below="@+id/buttonsLyt"
+      android:layout_marginBottom="15dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/calculate_pressed"
+      android:clickable="true">
+
+
+      <com.example.suleyman.project_a.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="AXTAR"
+        android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <View
+      android:id="@+id/dividerView"
+      android:layout_width="wrap_content"
+      android:layout_height="1dp"
+      android:layout_below="@+id/searchLyt"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:background="#3b4584" />
+
+
+    <ScrollView
+      android:id="@+id/infoScroll"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_below="@+id/searchLyt"
+      android:background="#1d2636">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+          android:id="@+id/firstLyt"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/firstLyt"
+          android:layout_marginTop="5dp">
+
+
+          <TextView
+            android:id="@+id/ekspeditorTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="EKSPEDİTORLAR"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+
+          <RelativeLayout
+            android:id="@+id/sirketLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/ekspeditorTxt">
+
+
+            <LinearLayout
+              android:id="@+id/firstLinLyt"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:background="#3d4c68"
+              android:orientation="horizontal"
+              android:weightSum="8">
+
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.2">
+
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:text="EKSPEDİTOR"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentLeft="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4">
+
+
+                <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:text="VAQON"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:gravity="center"
+                  android:text="KNT."
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <ListView
+              android:id="@+id/sirketList"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/firstLinLyt"></ListView>
+
+
+            <ProgressBar
+              android:id="@+id/firmBar"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_below="@+id/firstLinLyt"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"
+              android:visibility="invisible" />
+
+          </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+          android:id="@+id/secondLyt"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/firstLyt"
+          android:layout_marginTop="5dp">
+
+
+          <TextView
+            android:id="@+id/masrutTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="MAŞRUTLAR"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+
+          <RelativeLayout
+            android:id="@+id/masrutLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/masrutTxt"
+            android:visibility="gone">
+
+
+            <LinearLayout
+              android:id="@+id/firstLinLyt"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:background="#3d4c68"
+              android:orientation="horizontal"
+              android:weightSum="8">
+
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.2">
+
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:text="MARŞRUT"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentLeft="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4">
+
+
+                <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:text="VAQON"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:gravity="center"
+                  android:text="KNT."
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <ListView
+              android:id="@+id/masrutList"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/firstLinLyt"></ListView>
+
+
+            <ProgressBar
+              android:id="@+id/marsrutBar"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_below="@+id/firstLinLyt"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"
+              android:visibility="invisible" />
+
+          </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+          android:id="@+id/thirdLyt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/secondLyt"
+          android:layout_marginTop="5dp">
+
+
+          <TextView
+            android:id="@+id/rubTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="RÜBLƏR ÜZRƏ"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+          <RelativeLayout
+            android:id="@+id/rubLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rubTxt"
+            android:visibility="gone">
+
+            <LinearLayout
+              android:id="@+id/firstLinLyt"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:background="#3d4c68"
+              android:orientation="horizontal"
+              android:weightSum="8">
+
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.2">
+
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:text="RÜB"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentLeft="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4">
+
+
+                <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:text="VAQON"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:gravity="center"
+                  android:text="KNT."
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <ListView
+              android:id="@+id/rubList"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/firstLinLyt"></ListView>
+
+
+            <ProgressBar
+              android:id="@+id/rubBar"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_below="@+id/firstLinLyt"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"
+              android:visibility="invisible" />
+
+          </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:id="@+id/forthLyt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/thirdLyt"
+          android:layout_marginTop="5dp">
+
+
+          <com.example.suleyman.project_a.FontTextView
+            android:id="@+id/aylarTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="AYLAR ÜZRƏ"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+          <RelativeLayout
+            android:id="@+id/ayLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aylarTxt"
+            android:visibility="gone">
+
+
+            <LinearLayout
+              android:id="@+id/firstLinLyt"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:background="#3d4c68"
+              android:orientation="horizontal"
+              android:weightSum="8">
+
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.2">
+
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:text="AY"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentLeft="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4">
+
+
+                <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:text="VAQON"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:gravity="center"
+                  android:text="KNT."
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <ListView
+              android:id="@+id/aylarList"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/firstLinLyt"></ListView>
+
+
+            <ProgressBar
+              android:id="@+id/aylarBar"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_below="@+id/firstLinLyt"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"
+              android:visibility="invisible" />
+
+          </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+          android:id="@+id/fifthLyt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/forthLyt"
+          android:layout_marginTop="5dp">
+
+
+          <TextView
+            android:id="@+id/dasimaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="DAŞIMA VASİTƏLƏRİ"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+          <ListView
+            android:id="@+id/dasimaList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dasimaTxt"
+            android:visibility="gone">
+
+          </ListView>
+
+          <ProgressBar
+            android:id="@+id/dasimaBar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:id="@+id/sixthLyt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/fifthLyt"
+          android:layout_marginTop="5dp">
+
+
+          <TextView
+            android:id="@+id/clientTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="MÜŞTƏRİLƏR ÜZRƏ"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+          <RelativeLayout
+            android:id="@+id/musteriLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clientTxt"
+            android:visibility="gone">
+
+
+            <LinearLayout
+              android:id="@+id/firstLinLyt"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:background="#3d4c68"
+              android:orientation="horizontal"
+              android:weightSum="8">
+
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.2">
+
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:text="MÜŞTƏRİ"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentLeft="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4">
+
+
+                <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:text="VAQON"
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:gravity="center"
+                  android:text="KNT."
+                  android:textColor="#FFFFFF"
+                  android:textSize="14sp" />
+
+                <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:background="#3d4570" />
+
+              </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <ListView
+              android:id="@+id/clientList"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/firstLinLyt"></ListView>
+
+
+            <ProgressBar
+              android:id="@+id/musteriBar"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_below="@+id/firstLinLyt"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"
+              android:visibility="invisible" />
+
+          </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:id="@+id/seventhLyt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/sixthLyt"
+          android:layout_marginTop="5dp">
+
+
+          <TextView
+            android:id="@+id/emrTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pressed2"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="ƏMRLƏR"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/slide_btn" />
+
+          <ListView
+            android:id="@+id/emrList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emrTxt"
+            android:visibility="gone">
+
+          </ListView>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="20dp">
+
+        </RelativeLayout>
+
+      </LinearLayout>
+
+
+    </ScrollView>
+
+
+  </RelativeLayout>
+
+
+</FrameLayout>

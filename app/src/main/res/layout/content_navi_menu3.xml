@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.example.suleyman.project_a"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/content_navi_menu2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.suleyman.project_a.navi_menu"
+    tools:showIn="@layout/app_bar_navi_menu">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateLinLyt"
+        android:orientation="horizontal"
+        android:background="#1d2636"
+        android:weightSum="2">
+
+
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_weight="1">
+
+           <Spinner
+               android:id="@+id/dateType"
+               android:layout_width="120dp"
+               android:layout_height="30dp"
+               android:layout_below="@+id/QnqLyt"
+               android:background="@drawable/orange_btn_arrow"
+               android:layout_centerInParent="true"
+               android:textColor="#FFFFFF" />
+
+       </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/dateLyt"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/calculate_pressed"
+            android:clickable="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="12/3/2018"
+                android:id="@+id/dateTxt"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/dateLyt2"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/dateLyt"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/calculate_pressed"
+                android:clickable="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="12/3/2018"
+                    android:id="@+id/dateTxt2"
+                    android:textColor="#FFFFFF"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dateLinLyt"
+        android:background="#1d2636"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout3"
+            android:background="#1D2636">
+
+            <RelativeLayout
+                android:id="@+id/rel_lay2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/rlw_bck"
+                android:paddingStart="10dp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:layout_below="@+id/eletLyt">
+
+
+                <com.example.suleyman.project_a.TextViewPlus
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:id="@+id/lbl_ex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/txt_ex_date"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="BÖYÜK-KƏSİK"
+                    android:textColor="@color/bgcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sldbtn2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/right_arrow2" />
+
+                <TextView
+                    android:id="@+id/bakiDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fca92c"
+                    android:text="8/3/2018"
+                    android:layout_alignLeft="@+id/lbl_ex"
+                    android:layout_marginTop="40dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:visibility="gone"
+                android:layout_below="@+id/rel_lay2"
+                android:id="@+id/bakiLyt">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:id="@+id/bakiList"
+                    android:layout_below="@+id/relativeLayout"></ListView>
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/bakiPrg"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_lay4"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/boyukLyt"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/rlw_bck"
+                android:visibility="visible">
+
+                <com.example.suleyman.project_a.TextViewPlus
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:id="@+id/lbl_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="BAKI"
+                    android:textColor="@color/bgcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sldbtn4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/right_arrow2" />
+
+
+                <TextView
+                    android:id="@+id/qaradagDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fca92c"
+                    android:text="8/3/2018"
+                    android:layout_alignLeft="@+id/lbl_in"
+                    android:layout_marginTop="40dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/relativeLayout3"
+                android:background="@drawable/rlw_bck">
+
+
+                <com.example.suleyman.project_a.TextViewPlus
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:id="@+id/lbl_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="YALAMA"
+                    android:textColor="@color/bgcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/SLDBTN1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/right_arrow2" />
+
+
+                <TextView
+                    android:id="@+id/eletDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fca92c"
+                    android:text="8/3/2018"
+                    android:layout_alignLeft="@+id/lbl_im"
+                    android:layout_marginTop="40dp"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:visibility="gone"
+                android:layout_below="@+id/relativeLayout"
+                android:id="@+id/eletLyt">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:id="@+id/eletList"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"></ListView>
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/eletPrg"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel_lay3"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/rlw_bck"
+                android:visibility="visible"
+                android:layout_below="@+id/bakiLyt">
+
+
+                <com.example.suleyman.project_a.TextViewPlus
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:id="@+id/lbl_tr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="ƏLƏT"
+                    android:textColor="@color/bgcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sldbtn3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/right_arrow2" />
+
+                <TextView
+                    android:id="@+id/boyukDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fca92c"
+                    android:text="8/3/2018"
+                    android:layout_alignLeft="@+id/lbl_tr"
+                    android:layout_marginTop="40dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:visibility="gone"
+                android:layout_below="@+id/rel_lay3"
+                android:id="@+id/boyukLyt">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:id="@+id/boyukList"
+                    android:layout_below="@+id/rel_lay3"></ListView>
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/boyukPrg"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:visibility="gone"
+                android:layout_below="@+id/rel_lay4"
+                android:id="@+id/qaradagLyt">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:id="@+id/qaradagList"
+                    ></ListView>
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/qaradagPrg"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_lay5"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/qaradagLyt"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/rlw_bck"
+                android:visibility="visible">
+
+                <com.example.suleyman.project_a.TextViewPlus
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:id="@+id/lbl_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="ASTARA"
+                    android:textColor="@color/bgcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sldbtn5"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/right_arrow2" />
+
+
+                <TextView
+                    android:id="@+id/yalamaDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fca92c"
+                    android:text="8/3/2018"
+                    android:layout_alignLeft="@+id/lbl_in"
+                    android:layout_marginTop="40dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:visibility="gone"
+                android:layout_below="@+id/rel_lay5"
+                android:id="@+id/yalamaLyt">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:id="@+id/yalamaList"
+                    ></ListView>
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/yalamaPrg"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_lay6"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/yalamaLyt"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/rlw_bck"
+                android:visibility="visible">
+
+                <com.example.suleyman.project_a.TextViewPlus
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:id="@+id/lbl_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="HÖVSAN"
+                    android:textColor="@color/bgcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sldbtn6"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/right_arrow2" />
+
+                <TextView
+                    android:id="@+id/astaraDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fca92c"
+                    android:text="8/3/2018"
+                    android:layout_alignLeft="@+id/lbl_in"
+                    android:layout_marginTop="40dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_below="@+id/rel_lay6"
+                android:visibility="gone"
+                android:id="@+id/astaraLyt">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:id="@+id/astaraList"
+                    ></ListView>
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/astaraPrg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_lay7"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/rlw_bck"
+                android:visibility="visible"
+                android:layout_below="@+id/astaraLyt">
+
+                <com.example.suleyman.project_a.TextViewPlus
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:id="@+id/lbl_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="SANQAÇAL"
+                    android:textColor="@color/bgcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sldbtn7"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/right_arrow2" />
+
+                <TextView
+                    android:id="@+id/hovsanDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fca92c"
+                    android:text="8/3/2018"
+                    android:layout_alignLeft="@+id/lbl_in"
+                    android:layout_marginTop="40dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_below="@+id/rel_lay7"
+                android:visibility="gone"
+                android:id="@+id/hovsanLyt">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:id="@+id/hovsanList"
+                    ></ListView>
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/hovsanPrg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_lay8"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hovsanLyt"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/rlw_bck"
+                android:visibility="visible">
+
+                <com.example.suleyman.project_a.TextViewPlus
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:id="@+id/lbl_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="QARADAĞ"
+                    android:textColor="@color/bgcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sldbtn8"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/right_arrow2" />
+
+                <TextView
+                    android:id="@+id/sanqaDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fca92c"
+                    android:text="8/3/2018"
+                    android:layout_alignLeft="@+id/lbl_in"
+                    android:layout_marginTop="40dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:visibility="gone"
+                android:layout_below="@+id/rel_lay8"
+                android:id="@+id/sanqaLyt">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:id="@+id/sanqaList"
+                    ></ListView>
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/sanqaPrg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

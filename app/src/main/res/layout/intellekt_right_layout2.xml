@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:clickable="true"
+  android:layout_height="match_parent"
+  android:background="#FFFFFF">
+
+  <RelativeLayout
+    android:id="@+id/rel1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+      android:id="@+id/lin1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="2"
+      android:orientation="horizontal">
+
+      <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Daşıma növü"
+          android:id="@+id/birT"
+          android:layout_marginTop="20dp"
+          android:textColor="#000000"
+          android:gravity="center" />
+
+        <Spinner
+          android:background="@drawable/orange_btn_arrow"
+          android:id="@+id/cmb_dasimaType"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:drawableRight="@drawable/search"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_below="@+id/birT"
+          android:layout_marginLeft="10dp"
+          android:textAlignment="center"
+          android:textColor="@color/bgcolor"
+          android:textColorHint="#fed290" />
+
+
+        <TextView
+          android:id="@+id/ikiT"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Rüb"
+          android:layout_marginTop="10dp"
+          android:layout_below="@+id/cmb_dasimaType"
+          android:textColor="#000000"
+          android:gravity="center" />
+
+        <Spinner
+          android:background="@drawable/orange_btn_arrow"
+          android:id="@+id/cmb_rubType"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:drawableRight="@drawable/search"
+          android:layout_below="@+id/ikiT"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="10dp"
+          android:textAlignment="center"
+          android:textColor="@color/bgcolor"
+          android:textColorHint="#fed290" />
+
+        <TextView
+          android:id="@+id/ucT"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Mənsubiyyət"
+          android:layout_below="@+id/cmb_rubType"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:gravity="center" />
+
+        <Spinner
+          android:background="@drawable/orange_btn_arrow"
+          android:id="@+id/cmb_ownerType"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:drawableRight="@drawable/search"
+          android:layout_marginTop="5dp"
+          android:layout_below="@+id/ucT"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="10dp"
+          android:paddingRight="20dp"
+          android:textAlignment="center"
+          android:textColor="@color/bgcolor"
+          android:textColorHint="#fed290" />
+
+        <TextView
+          android:id="@+id/dordT"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/cmb_ownerType"
+          android:text="Qiymət tipi"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:gravity="center" />
+
+        <Spinner
+          android:background="@drawable/orange_btn_arrow"
+          android:id="@+id/cmb_selBuyType"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:drawableRight="@drawable/search"
+          android:layout_marginTop="5dp"
+          android:layout_below="@+id/dordT"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="10dp"
+          android:textAlignment="center"
+          android:textColor="@color/bgcolor"
+          android:textColorHint="#fed290" />
+
+        <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:layout_below="@+id/cmb_selBuyType"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:inputType="number"
+          android:id="@+id/weight1Edt"
+          android:singleLine="true"
+          android:imeOptions="actionNext"
+          android:hint="Kütlə(min)"/>
+
+        <CheckBox
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_below="@+id/weight1Edt"
+          android:text="2016"
+          android:id="@+id/yearCheck"
+          android:layout_marginLeft="10dp"
+          android:textColor="#000000"/>
+
+      </RelativeLayout>
+
+
+      <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Yükləmə növü"
+          android:id="@+id/besT"
+          android:layout_marginTop="20dp"
+          android:textColor="#000000"
+          android:gravity="center" />
+
+        <Spinner
+          android:background="@drawable/orange_btn_arrow"
+          android:id="@+id/cmb_yukType"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:drawableRight="@drawable/search"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="10dp"
+          android:layout_below="@+id/besT"
+          android:textAlignment="center"
+          android:textColor="@color/bgcolor"
+          android:textColorHint="#fed290" />
+
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/altiT"
+          android:layout_below="@+id/cmb_yukType"
+          android:text="Daşıma vasitəsi"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:gravity="center" />
+
+        <Spinner
+          android:background="@drawable/orange_btn_arrow"
+          android:id="@+id/cmb_vgType"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:drawableRight="@drawable/search"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="10dp"
+          android:layout_below="@+id/altiT"
+          android:textAlignment="center"
+          android:textColor="@color/bgcolor"
+          android:textColorHint="#fed290" />
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/yediT"
+          android:layout_below="@+id/cmb_vgType"
+          android:text="Mənşəyi"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:gravity="center" />
+
+        <Spinner
+          android:background="@drawable/orange_btn_arrow"
+          android:id="@+id/cmb_originType"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:drawableRight="@drawable/search"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_below="@+id/yediT"
+          android:layout_marginLeft="10dp"
+          android:paddingRight="20dp"
+          android:textAlignment="center"
+          android:textColor="@color/bgcolor"
+          android:textColorHint="#fed290" />
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/sekizT"
+          android:layout_below="@+id/cmb_originType"
+          android:text="Axtarış tipi"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:gravity="center" />
+
+        <Spinner
+          android:background="@drawable/orange_btn_arrow"
+          android:id="@+id/cmb_searchType"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:drawableRight="@drawable/search"
+          android:layout_marginTop="5dp"
+          android:layout_below="@+id/sekizT"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="10dp"
+          android:textAlignment="center"
+          android:textColor="@color/bgcolor"
+          android:textColorHint="#fed290" />
+
+        <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp"
+          android:singleLine="true"
+          android:layout_below="@+id/cmb_searchType"
+          android:inputType="number"
+          android:id="@+id/weight2Edt"
+          android:layout_marginRight="10dp"
+          android:imeOptions="actionDone"
+          android:hint="Kütlə(max)"/>
+
+      </RelativeLayout>
+
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+  <Button
+    android:id="@+id/btn_ok"
+    android:layout_width="150dp"
+    android:layout_height="30dp"
+    android:background="@drawable/green_btn"
+    android:drawableRight="@drawable/ok"
+    android:paddingRight="10dp"
+    android:text="NƏTİCƏ"
+    android:textColor="@color/bgcolor"
+    android:layout_below="@id/rel1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

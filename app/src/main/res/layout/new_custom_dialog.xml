@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#a51d2637"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="#FFFFFF"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3d4e6c">
+
+
+                <ImageView
+                    android:id="@+id/closeImg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="3dp"
+                    android:src="@drawable/close_2"
+                    android:clickable="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edtTxtLyt"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.suleyman.project_a.FontEditText
+                    android:id="@+id/dialogEdtText"
+                    android:layout_width="match_parent"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:hint="Məlumatı daxil edin"/>
+
+
+                 <ImageView
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"
+                     android:id="@+id/clearTxt"
+                     android:clickable="true"
+                     android:background="@color/cpb_white"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginTop="3dp"
+                     android:src="@drawable/ic_clear_text"/>
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_below="@+id/edtTxtLyt">
+            </ListView>
+
+            <ProgressBar
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/qnqPrgbar"
+                android:visibility="gone"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

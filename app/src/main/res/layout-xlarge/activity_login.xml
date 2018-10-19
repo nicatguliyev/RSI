@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.example.suleyman.project_a"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2636"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.suleyman.project_a.Login">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="#1D2636"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/circularButton1"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="font-cer"
+            android:paddingBottom="0dp"
+            android:paddingTop="1dp"
+            android:background="@color/bar_brown"
+            android:textColor="@color/cpb_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cpb_cornerRadius="48dp"
+            app:cpb_iconComplete="@drawable/corr45"
+            app:cpb_iconError="@drawable/errpr"
+            app:cpb_textIdle="Sign in" />
+    </RelativeLayout>
+
+    <com.example.suleyman.project_a.EditTextPlus
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:textColor="@color/bgcolor"
+        android:textColorHint="#3d4c68"
+        android:typeface="normal"
+        foo:customFont="fonts/Cera PRO.ttf"/>
+
+    <com.example.suleyman.project_a.EditTextPlus
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/username"
+        android:layout_alignRight="@+id/username"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPassword"
+        android:textColor="@color/bgcolor"
+        android:textColorHint="#3d4c68"
+        foo:customFont="fonts/Cera PRO.ttf"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        app:srcCompat="@drawable/logo" />
+
+    <com.example.suleyman.project_a.TextViewPlus
+        foo:customFont="fonts/Cera PRO.ttf"
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAILWAYS SYSTEMS INTEGRATOR"
+        android:textSize="10dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="-130dp"
+        android:textColor="@color/bgcolor"
+        android:layout_centerHorizontal="true"/>
+
+    <com.example.suleyman.project_a.TextViewPlus
+        foo:customFont="fonts/Cera PRO.ttf"
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8dp"
+        android:text="© 2017  ALL RIGHTS RESERVED.Design by Fuad H.Aslan"
+
+        android:textColor="@color/x"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_alignStart="@+id/pass"
+        android:layout_marginBottom="23dp" />
+
+    <com.example.suleyman.project_a.TextViewPlus
+        foo:customFont="fonts/Cera PRO.ttf"
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8dp"
+        android:text="railways systems integrator"
+        android:textColor="@color/cpb_white"
+        android:layout_alignBaseline="@+id/imageView4"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignRight="@+id/pass"
+        android:layout_alignEnd="@+id/pass" />
+
+</RelativeLayout>

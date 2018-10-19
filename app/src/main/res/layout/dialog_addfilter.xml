@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.example.suleyman.project_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/white_ground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonPlus10"
+            android:layout_marginTop="50dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/white_ground"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+                <Spinner
+                    android:background="@drawable/orange_btn_arrow"
+                    android:id="@+id/cmb_vgtype"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:drawableRight="@drawable/search"
+                    android:hint="YHN Kod"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/bgcolor"
+                    android:textColorHint="#fed290"
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:theme="@style/spinnerTheme"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+
+
+                <Spinner
+                    android:id="@+id/cmb_owner"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="43dp"
+                    android:background="@drawable/orange_btn_arrow"
+                    android:drawableRight="@drawable/search"
+                    android:hint="YHN Kod"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/bgcolor"
+                    android:textColorHint="#fed290"
+                    android:theme="@style/spinnerTheme"
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:layout_below="@+id/cmb_qttype"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Spinner
+                    android:id="@+id/cmb_ptype"
+
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+
+                    android:background="@drawable/orange_btn_arrow"
+                    android:drawableRight="@drawable/search"
+                    android:hint="YHN Kod"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/bgcolor"
+                    android:textColorHint="#fed290"
+                    android:theme="@style/spinnerTheme"
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:layout_above="@+id/btn_ok"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Spinner
+                    android:id="@+id/cmb_origin"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/orange_btn_arrow"
+                    android:drawableRight="@drawable/search"
+                    android:hint="YHN Kod"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/bgcolor"
+                    android:textColorHint="#fed290"
+                    android:theme="@style/spinnerTheme"
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:layout_alignTop="@+id/cmb_owner"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Spinner
+                    android:background="@drawable/orange_btn_arrow"
+                    android:id="@+id/cmb_rtype"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/cmb_ltype"
+                    android:layout_alignStart="@+id/cmb_ltype"
+                    android:layout_alignTop="@+id/cmb_qttype"
+                    android:drawableRight="@drawable/search"
+                    android:hint="Marsrut2"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/bgcolor"
+                    android:textColorHint="#fed290"
+                    foo:customFont="fonts/Cera PRO.ttf" />
+
+                <Spinner
+                    android:background="@drawable/orange_btn_arrow"
+                    android:id="@+id/cmb_qttype"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="39dp"
+                    android:drawableRight="@drawable/search"
+                    android:hint="Marsrut1"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/bgcolor"
+                    android:textColorHint="#fed290"
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:layout_below="@+id/cmb_vgtype"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <Spinner
+                    android:id="@+id/cmb_ltype"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/orange_btn_arrow"
+                    android:paddingRight="10dp"
+                    android:text="REJİM"
+                    android:textAlignment="center"
+                    android:textColor="@color/bgcolor"
+                    android:theme="@style/spinnerTheme"
+                    android:layout_alignTop="@+id/cmb_vgtype"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daşıma Növü"
+                    android:textColor="#908d7f"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_above="@+id/cmb_rtype"
+                    android:layout_alignLeft="@+id/cmb_rtype"
+                    android:layout_alignStart="@+id/cmb_rtype" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#908d7f"
+                    android:text="2016"
+                    android:layout_below="@+id/cmb_origin"
+                    android:layout_alignLeft="@+id/btn_ok"
+                    android:layout_alignStart="@+id/btn_ok"
+                    android:layout_marginTop="32dp" />
+
+                <com.example.suleyman.project_a.ButtonPlus
+                    android:id="@+id/btn_ok"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/green_btn"
+                    android:drawableRight="@drawable/ok"
+                    android:paddingRight="10dp"
+                    android:text="NƏTİCƏ"
+                    android:textColor="@color/bgcolor"
+                    foo:customFont="fonts/Cera PRO.ttf"
+                    android:layout_below="@+id/checkBox"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="36dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/close_btn"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <com.example.suleyman.project_a.TextViewPlus
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="close"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            foo:customFont="fonts/Cera PRO Bold.ttf"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignBaseline="@+id/yes"
+            android:layout_alignBottom="@+id/yes"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yükləmə növü"
+            android:textColor="#908d7f"
+            android:layout_alignTop="@+id/relativeLayout8"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:text="Daşıma Vasitəsi"
+            android:textColor="#908d7f"
+            android:layout_alignTop="@+id/relativeLayout8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mənsubiyyət"
+            android:textColor="#908d7f"
+            android:layout_marginTop="54dp"
+            android:layout_below="@+id/textView11"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="Qiymət tipi"
+            android:textColor="#908d7f"
+            android:layout_below="@+id/textView14"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mənşəyi"
+            android:textColor="#908d7f"
+            android:layout_alignBaseline="@+id/textView14"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_alignRight="@+id/yes"
+            android:layout_alignEnd="@+id/yes" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#908d7f"
+            android:text="Rüb"
+            android:layout_marginTop="52dp"
+            android:layout_below="@+id/textView9"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

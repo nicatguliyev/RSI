@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="noaction" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyAlertDialogTheme" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowFixedWidthMajor">90%</item>
+        <item name="windowFixedWidthMinor">90%</item>
+        <item name="android:windowBackground">@drawable/popup_corner</item>
+    </style>
+    <style name="BrownActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+    </style>
+    <style name="White">
+        <item name="android:background">@color/bgcolor</item>
+    </style>
+
+    <style name="GrayActionBar" parent="@android:style/Widget.Holo.ActionBar">
+    </style>
+
+    <style name="HoloLightCustom" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/bar_brown</item>
+        <item name="android:colorBackground">@color/bar_brown</item>
+        <item name="android:actionBarStyle">@color/bar_brown</item>
+        <item name="android:textColor">@color/buttontextcolor</item>
+    </style>
+
+    <style name="LightCustom" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+
+    <style name="HoloCustom" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">@color/bgcolor2</item>
+        <item name="android:colorBackground">@color/bgcolor2</item>
+        <item name="android:actionBarStyle">@style/GrayActionBar</item>
+        <item name="android:textColor">@color/mainTextColor</item>
+    </style>
+
+    <style name="DarkCustom" parent="Theme.AppCompat.DayNight"></style>
+
+    <style name="MyDialogLight" parent="Theme.AppCompat.Light.Dialog.Alert"></style>
+
+    <style name="MyDialogDark" parent="Theme.AppCompat.Dialog.Alert"></style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">20sp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">40dp</item><!-- item size in menu-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.NoTitleBar.WithColoredSpinners" parent="@android:style/Theme.NoTitleBar">
+
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#00FF00</item>
+    </style>
+
+    <style name="SpinnerItem.DropDownItem" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+
+    <style name="spinnerTheme" parent="android:Theme">
+        <item name="android:textColor">@color/bgcolor</item>
+    </style>
+
+    <style name="datePickerStyle" parent="Theme.AppCompat.Light.Dialog"/>
+
+</resources>

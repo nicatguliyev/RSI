@@ -1,0 +1,194 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:foo="http://schemas.android.com/apk/res/com.example.suleyman.project_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suleyman.project_a.InSearch">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1D2636">
+
+        <com.example.suleyman.project_a.ButtonPlus
+            android:id="@+id/btn_preprice"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_btn"
+            android:drawableRight="@drawable/search"
+            android:paddingRight="10dp"
+            android:text="Əvvəlki qiymət"
+            android:textColor="@color/bgcolor"
+            foo:customFont="fonts/Cera PRO.ttf"
+            android:layout_below="@+id/txt_m1"
+            android:layout_alignLeft="@+id/txt_m1"
+            android:layout_alignStart="@+id/txt_m1" />
+
+        <com.example.suleyman.project_a.ButtonPlus
+            android:id="@+id/btn_addfilter"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/blue_btn"
+            android:drawableRight="@drawable/search"
+            android:paddingRight="10dp"
+            android:text="Əlavə filter"
+            android:textColor="@color/bgcolor"
+            foo:customFont="fonts/Cera PRO.ttf"
+            android:layout_above="@+id/relativeLayout8"
+            android:layout_alignLeft="@+id/txt_m2"
+            android:layout_alignStart="@+id/txt_m2" />
+
+        <com.example.suleyman.project_a.ButtonPlus
+            android:id="@+id/btn_result"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/btn_addfilter"
+            android:layout_alignLeft="@+id/btn_addfilter"
+            android:layout_alignStart="@+id/btn_addfilter"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/green_btn"
+            android:drawableRight="@drawable/ok"
+            android:paddingRight="10dp"
+            android:text="NƏTİCƏ"
+            android:textColor="@color/bgcolor"
+            foo:customFont="fonts/Cera PRO.ttf" />
+
+        <com.example.suleyman.project_a.EditTextPlus
+            android:id="@+id/txt_qnqcode"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/orange_btn"
+            android:drawableRight="@drawable/search"
+            android:hint="YHN Kod"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/bgcolor"
+            android:textColorHint="#fed290"
+            foo:customFont="fonts/Cera PRO.ttf"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp" />
+
+
+
+        <com.example.suleyman.project_a.EditTextPlus
+            android:id="@+id/txt_m2"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/cmb_actype"
+            android:layout_alignStart="@+id/cmb_actype"
+            android:layout_alignTop="@+id/txt_m1"
+            android:background="@drawable/orange_btn"
+            android:drawableRight="@drawable/search"
+            android:hint="Marsrut2"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/bgcolor"
+            android:textColorHint="#fed290"
+            foo:customFont="fonts/Cera PRO.ttf" />
+
+        <com.example.suleyman.project_a.EditTextPlus
+            android:id="@+id/txt_m1"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/orange_btn"
+            android:drawableRight="@drawable/search"
+            android:hint="Marsrut1"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/bgcolor"
+            android:textColorHint="#fed290"
+            foo:customFont="fonts/Cera PRO.ttf"
+            android:layout_below="@+id/txt_qnqcode"
+            android:layout_alignLeft="@+id/txt_qnqcode"
+            android:layout_alignStart="@+id/txt_qnqcode" />
+
+
+        <Spinner
+            android:id="@+id/cmb_actype"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/orange_btn_arrow"
+            android:paddingRight="10dp"
+            android:text="REJİM"
+            android:textAlignment="center"
+            android:textColor="@color/bgcolor"
+            android:theme="@style/spinnerTheme"
+            android:layout_alignTop="@+id/txt_qnqcode"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btn_preprice"
+            android:layout_marginTop="50dp">
+            <LinearLayout
+                android:id = "@+id/relativeLayout1"
+                android:layout_width = "fill_parent"
+                android:layout_height = "wrap_content"
+                android:background = "#3d4c68" >
+
+                <TextView
+                    android:layout_width = "0dp"
+                    android:layout_height = "wrap_content"
+                    android:layout_weight = "1"
+                    android:gravity = "center"
+                    android:padding = "5dp"
+                    android:text = "1 Tonun Qiyməti"
+                    android:textColor = "#ffffff" />
+
+                <TextView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "2"
+                    android:gravity = "center"
+                    android:padding = "5dp"
+                    android:text = "Cəmi Alış"
+                    android:textColor = "#ffffff" />
+
+                <TextView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "1.5"
+                    android:gravity = "center"
+                    android:padding = "5dp"
+                    android:text = "Cəmi Satış"
+                    android:textColor = "#ffffff" />
+
+                <TextView
+                    android:layout_width = "0dp"
+                    android:layout_height = "wrap_content"
+                    android:layout_weight = "1"
+                    android:gravity = "center"
+                    android:padding = "5dp"
+                    android:text = "Cəmi Tonnaj"
+                    android:textColor = "#ffffff" />
+            </LinearLayout>
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:divider = "@null"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,503 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:foo="http://schemas.android.com/apk/res/com.example.suleyman.project_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.example.suleyman.project_a.Daily">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1D2636">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cemLyt"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/cpb_white"
+                android:text="Müqayisə olunacaq illər" />
+
+            <RelativeLayout
+                android:id="@+id/spinnerLyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/textView1">
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/textView1"
+                android:background="@drawable/year_btn_arrow"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/cpb_white" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:background="@drawable/year_btn_arrow"
+                android:gravity="center"
+                android:layout_alignTop="@+id/spinner"
+                android:layout_toRightOf="@+id/spinner"
+                android:layout_marginLeft="70dp"
+                android:textAlignment="center"
+                android:textColor="@color/cpb_white" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/qeydTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerLyt"
+                android:textColor="@color/cpb_white"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Qeyd:"/>
+
+            <TextView
+                android:id="@+id/xxxx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/qeydTxt"
+                android:textColor="@color/cpb_white"
+                android:textSize="20sp"
+                android:text="Yaşıl fonla yazılan ədədlər proqnoz olaraq verilir"
+                android:layout_alignTop="@+id/qeydTxt"
+                android:layout_marginLeft="5dp"/>
+
+            <LinearLayout
+                android:id = "@+id/relativeLayout1"
+                android:layout_width = "fill_parent"
+                android:layout_height = "wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/xxxx"
+                android:background = "#3d4c68" >
+
+                <TextView
+                    android:layout_width = "0dp"
+                    android:layout_height = "wrap_content"
+                    android:layout_weight = "0.5"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:text = "Ay"
+                    android:textColor = "#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.25"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Daşıma"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "1.25"
+                    android:gravity = "center"
+                    android:padding = "5dp"
+                    android:text = "Müqayisə/Artım"
+                    android:textColor = "#ffffff" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id = "@+id/ccc"
+                android:layout_width = "fill_parent"
+                android:layout_height = "wrap_content"
+                android:background = "#3d4c68"
+                android:layout_below="@+id/relativeLayout1">
+
+                <TextView
+                    android:layout_width = "0dp"
+                    android:layout_height = "wrap_content"
+                    android:layout_weight = "0.33"
+                    android:gravity = "center"
+                    android:padding = "5dp"
+                    android:text = ""
+                    android:textColor = "#ffffff" />
+
+                <TextView
+                    android:id="@+id/firstYearTxt"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "0.8"
+                    android:gravity = "center"
+                    android:padding = "5dp"
+                    android:text = "2016"
+                    android:textColor = "#ffffff" />
+
+                <TextView
+                    android:id="@+id/secondYearTxt"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "0.8"
+                    android:gravity = "center"
+                    android:padding = "5dp"
+                    android:text = "2017"
+                    android:textColor = "#ffffff" />
+
+                <TextView
+                    android:layout_width = "0dp"
+                    android:layout_height = "wrap_content"
+                    android:layout_weight = "1"
+                    android:gravity = "center"
+                    android:padding = "5dp"
+                    android:text = "Fərq/Faiz"
+                    android:textColor = "#ffffff" />
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ccc"
+                android:layout_alignParentLeft="true"
+                android:divider="@null"
+                android:visibility="invisible"
+                android:dividerHeight="0dp"
+                android:layout_alignParentStart="true" />
+
+
+            <RelativeLayout
+                android:id="@+id/cemLyt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/listview">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="#3d4c68"
+                    android:id="@+id/bir">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cəm"
+                            android:id = "@+id/txt_dayC"
+                            android:textSize="16sp"
+                            android:textColor="@color/cpb_white"
+                            android:layout_centerInParent="true"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="12"
+                            android:gravity="center"
+                            android:textColor="@color/cpb_white"
+                            android:textSize="16sp"
+                            android:id = "@+id/total2016C"
+                            android:layout_centerInParent="true"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id = "@+id/total2017C"
+                            android:textColor="@color/cpb_white"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="12"
+                            android:layout_centerInParent="true"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5.3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="12"
+                            android:id = "@+id/txt_diffC"
+                            android:gravity="center"
+                            android:paddingTop="6dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/cpb_white"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="6dp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8">
+
+                        <ImageView
+                            android:id="@+id/country_iconC"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/down_arrow"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yekunLyt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#3d4c68"
+                android:visibility="invisible"
+                android:layout_below="@+id/cemLyt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/bir">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="İllik"
+                            android:id = "@+id/txt_dayI"
+                            android:textSize="16sp"
+                            android:textColor="@color/cpb_white"
+                            android:layout_centerInParent="true"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="12"
+                            android:gravity="center"
+                            android:textColor="@color/cpb_white"
+                            android:textSize="16sp"
+                            android:id = "@+id/total2016I"
+                            android:layout_centerInParent="true"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id = "@+id/total2017I"
+                            android:textColor="@color/cpb_white"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:text="12"
+                            android:layout_centerInParent="true"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5.3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="12"
+                            android:id = "@+id/txt_diffI"
+                            android:gravity="center"
+                            android:paddingTop="6dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/cpb_white"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="6dp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/cpb_white"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8">
+
+                        <ImageView
+                            android:id="@+id/country_iconI"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/down_arrow"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/monthPrg"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

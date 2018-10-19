@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1d2636">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/ilRadioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="İllərə görə müqayisə"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:buttonTint="#000000"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:id="@+id/ilLyt"
+                    android:visibility="gone"
+                    android:background="#1d2636">
+
+                    <EditText
+                        android:id="@+id/ilQnqEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:textColor="#FFFFFF"
+                        android:hint="QNQ"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:textColorHint="#6cffffff"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <ImageView
+                        android:id="@+id/searchImg1"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_white_search"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/pressed_layout"
+                        android:clickable="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="20dp"/>
+
+
+                    <Spinner
+                        android:id="@+id/ilyear1"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/ilQnqEdt"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/orange_btn_arrow"
+                        android:textColor="#FFFFFF" />
+
+
+
+                    <Spinner
+                        android:id="@+id/ilyear2"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/ilQnqEdt"
+                        android:layout_marginTop="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/orange_btn_arrow"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/ilSearchLyt"
+                        android:layout_width="170dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ilyear2"
+                        android:background="@drawable/calculate_pressed"
+                        android:clickable="true">
+
+
+                        <com.example.suleyman.project_a.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Müqayisə et"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RadioButton
+                    android:id="@+id/qnqRadioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="QNQ-yə görə müqayisə"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:textSize="20sp"
+                    android:buttonTint="#000000"/>
+
+                <RelativeLayout
+                    android:id="@+id/qnqLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:visibility="gone"
+                    android:background="#1d2636">
+
+                    <EditText
+                        android:id="@+id/qnqQnq1Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:textColor="#FFFFFF"
+                        android:hint="QNQ 1"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:textColorHint="#6cffffff"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <ImageView
+                        android:id="@+id/searchImg2"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_white_search"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/pressed_layout"
+                        android:clickable="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <EditText
+                        android:id="@+id/qnqQnq2Edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:textColor="#FFFFFF"
+                        android:hint="QNQ 2"
+                        android:layout_below="@+id/qnqQnq1Edt"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:textColorHint="#6cffffff"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <ImageView
+                        android:id="@+id/searchImg3"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_white_search"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/pressed_layout"
+                        android:layout_below="@+id/qnqQnq1Edt"
+                        android:clickable="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <Spinner
+                        android:id="@+id/qnqYear"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_below="@+id/qnqQnq2Edt"
+                        android:layout_alignLeft="@+id/qnqQnq2Edt"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/orange_btn_arrow"
+                        android:textColor="#FFFFFF" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/qnqSearchLyt"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:layout_alignRight="@+id/qnqQnq2Edt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/qnqQnq2Edt"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/calculate_pressed"
+                        android:clickable="true">
+
+
+                        <com.example.suleyman.project_a.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Müqayisə et"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RadioButton
+                    android:id="@+id/musteriRadioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Müştəriyə-yə görə müqayisə"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:textSize="20sp"
+                    android:buttonTint="#000000"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:id="@+id/musteriLyt"
+                    android:visibility="gone"
+                    android:background="#1d2636">
+
+                    <Spinner
+                        android:id="@+id/musteri1Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:paddingRight="20dp"
+                        android:background="@drawable/orange_btn_arrow"
+                        android:textColor="#FFFFFF" />
+
+                    <Spinner
+                        android:id="@+id/musteri2Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_below="@+id/musteri1Spinner"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/orange_btn_arrow"
+                        android:textColor="#FFFFFF" />
+
+                    <Spinner
+                        android:id="@+id/musteriYear"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_below="@+id/musteri2Spinner"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/orange_btn_arrow"
+                        android:textColor="#FFFFFF" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/musteriSearchLyt"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/musteri2Spinner"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/calculate_pressed"
+                        android:clickable="true">
+
+
+                        <com.example.suleyman.project_a.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Müqayisə et"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RadioButton
+                    android:id="@+id/gelirRadioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Gəlirə görə müqayisə"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:buttonTint="#000000"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:visibility="gone"
+                    android:background="#1d2636"
+                    android:id="@+id/gelirLyt">
+
+
+                    <EditText
+                        android:id="@+id/gelirQnqEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:textColor="#FFFFFF"
+                        android:hint="QNQ"
+                        android:layout_below="@+id/qnqQnq1Edt"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:textColorHint="#6cffffff"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <ImageView
+                        android:id="@+id/searchImg5"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_white_search"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/pressed_layout"
+                        android:layout_below="@+id/qnqQnq1Edt"
+                        android:clickable="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <Spinner
+                        android:id="@+id/gelirMusteriSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_below="@+id/gelirQnqEdt"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/orange_btn_arrow"
+                        android:textColor="#FFFFFF" />
+
+                    <Spinner
+                        android:id="@+id/gelirYear"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_below="@+id/gelirMusteriSpinner"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/orange_btn_arrow"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/gelirSearchLyt"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/gelirMusteriSpinner"
+                        android:layout_marginTop="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/calculate_pressed"
+                        android:clickable="true">
+
+
+                        <com.example.suleyman.project_a.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Axtar"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </RadioGroup>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.example.suleyman.project_a"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/white_ground">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/progres_des" />
+
+        <ListView
+            android:id="@+id/list_popoup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:id="@+id/gr_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relativeLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="12.5dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+             />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/close_btn"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/progressBar2"
+            android:layout_toEndOf="@+id/progressBar2" />
+
+        <com.example.suleyman.project_a.TextViewPlus
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="close"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_alignBaseline="@+id/yes"
+            android:layout_alignBottom="@+id/yes"
+            android:layout_toRightOf="@+id/yes"
+            android:layout_toEndOf="@+id/yes"
+            foo:customFont="fonts/Cera PRO Bold.ttf"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="90dp">
+
+
+    <com.example.suleyman.project_a.FontTextView
+        android:id="@+id/mehsul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neft"
+        android:textSize="21sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#1d2636"
+        android:layout_marginLeft="12dp"/>
+
+    <com.example.suleyman.project_a.FontTextView
+        android:id="@+id/bir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016:"
+        android:textSize="16sp"
+        android:textColor="#1d2636"
+        android:layout_below="@+id/mehsul"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="12dp"/>
+
+
+    <com.example.suleyman.project_a.FontTextView
+        android:id="@+id/txt_2016"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="38.456"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/bir"
+        android:textColor="#1d2636"
+        android:layout_alignTop="@+id/bir"
+        android:layout_marginLeft="5dp"/>
+
+    <com.example.suleyman.project_a.FontTextView
+        android:id="@+id/iki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017:"
+        android:textColor="#1d2636"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/txt_2016"
+        android:layout_alignTop="@+id/bir"
+        android:layout_marginLeft="30dp"/>
+
+    <com.example.suleyman.project_a.FontTextView
+        android:id="@+id/txt_2017"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="86.236"
+        android:textColor="#1d2636"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/iki"
+        android:layout_alignTop="@+id/iki"
+        android:layout_marginLeft="5dp"/>
+
+
+    <com.example.suleyman.project_a.FontTextView
+        android:id="@+id/ferq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fərq:"
+        android:textColor="#1d2636"
+        android:textSize="16sp"
+        android:layout_below="@+id/bir"
+        android:layout_alignLeft="@+id/bir"
+        android:layout_marginTop="3dp"/>
+
+
+    <com.example.suleyman.project_a.FontTextView
+        android:id="@+id/ferqTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10.236"
+        android:textSize="16sp"
+        android:textColor="#1d2636"
+        android:layout_below="@+id/bir"
+        android:layout_toRightOf="@+id/ferq"
+        android:layout_alignTop="@+id/ferq"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/up_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#44607c"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

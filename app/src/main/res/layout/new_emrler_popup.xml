@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e51d2637">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:background="#FFFFFF"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/bir"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3d4e6c">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/emrlerTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:text="ƏMRLƏR VƏ TARİF SİYASƏTİ"
+                    android:layout_marginLeft="10dp" />
+
+
+                <ImageView
+                    android:id="@+id/closeBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/close_2"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bir">
+            </ListView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

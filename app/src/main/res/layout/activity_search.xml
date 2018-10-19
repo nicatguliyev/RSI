@@ -1,0 +1,733 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2636"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.example.suleyman.project_a.CalculateFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1D2637">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/calculate_parent_lyt">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/transportLyt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:background="@drawable/pressed_layout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/tranportTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAŞIMA NÖVÜ"
+                    android:textSize="12sp"
+                    android:textColor="#9090a1"
+                    android:layout_marginLeft="7dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_white_expand"
+                    android:layout_marginRight="5dp"/>
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/selectedTransportTypeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="SEÇİLMƏYİB"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#3D4E6C"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/beginningStationLyt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/transportLyt"
+                android:layout_marginLeft="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginRight="20dp">
+
+                <com.example.suleyman.project_a.FontEditText
+                    android:id="@+id/beginningStationEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:hint="@string/begin_station_hint"
+                    android:background="@android:color/transparent"
+                    android:textColor="#ffffff"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="7dp"
+                    android:textColorHint="#9090a1"/>
+
+                <ImageView
+                    android:id="@+id/beginningSearchImg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/pressed_layout"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_white_search"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#3D4E6C"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/finalDestinationLyt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/beginningStationLyt"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.example.suleyman.project_a.FontEditText
+                    android:id="@+id/destinationEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:hint="@string/final_station_hint"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="7dp"
+                    android:textColorHint="#9090a1"/>
+
+                <ImageView
+                    android:id="@+id/destinationSearchImg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/pressed_layout"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_white_search"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#3D4E6C"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/qnqLyt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/finalDestinationLyt"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.example.suleyman.project_a.FontEditText
+                    android:id="@+id/qnqEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:inputType="text"
+                    android:hint="@string/qnq_hint"
+                    android:background="@android:color/transparent"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="7dp"
+                    android:textColorHint="#9090a1"/>
+
+                <ImageView
+                    android:id="@+id/qnqSearchImg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/pressed_layout"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_white_search"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#3D4E6C"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hidden_search_more_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qnqLyt"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/transportTypeLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/pressed_layout"
+                    android:clickable="true"
+                    android:layout_marginRight="20dp">
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/tranportTypeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REJIM"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#9090a1"
+                        android:layout_marginLeft="7dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_white_expand"
+                        android:layout_marginRight="5dp"/>
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/selectedRejimTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="SEÇİLMƏYİB"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#3D4E6C"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inputNodesLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:background="@drawable/pressed_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GİRİŞ"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#9090a1"
+                        android:layout_marginLeft="7dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_white_expand"
+                        android:layout_marginRight="5dp"/>
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/selectedInputNodeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="SEÇİLMƏYİB"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#3D4E6C"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/outputNodesLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:background="@drawable/pressed_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ÇIXIŞ"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#9090a1"
+                        android:layout_marginLeft="7dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_white_expand"
+                        android:layout_marginRight="5dp"/>
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/selectedOutputNodeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="SEÇİLMƏYİB"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#3D4E6C"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/etsnqLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/transportLyt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <com.example.suleyman.project_a.FontEditText
+                        android:id="@+id/etsnqEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="7dp"
+                        android:hint="@string/etsnq_hint"
+                        android:background="@android:color/transparent"
+                        android:textColor="#ffffff"
+                        android:inputType="text"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="7dp"
+                        android:textColorHint="#9090a1"/>
+
+                    <ImageView
+                        android:id="@+id/etsnqSearchImg"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:background="@drawable/pressed_layout"
+                        android:layout_marginBottom="7dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_white_search"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#3D4E6C"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/birjaLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <com.example.suleyman.project_a.FontEditText
+                        android:id="@+id/etsnqEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="7dp"
+                        android:hint="@string/birja_HINT"
+                        android:background="@android:color/transparent"
+                        android:textColor="#ffffff"
+                        android:inputType="text"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="7dp"
+                        android:textColorHint="#9090a1"/>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#3D4E6C"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wagonTypeLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/pressed_layout"
+                    android:clickable="true"
+                    android:layout_marginRight="20dp">
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="V/K TİPİ"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#9090a1"
+                        android:layout_marginLeft="7dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_white_expand"
+                        android:layout_marginRight="5dp"/>
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/selectedWagonTypeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="SEÇİLMƏYİB"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#3D4E6C"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/weightLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:background="@drawable/pressed_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TONNAJ/FUT"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#9090a1"
+                        android:layout_marginLeft="7dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_white_expand"
+                        android:layout_marginRight="5dp"/>
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/selectedWeightTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="SEÇİLMƏYİB"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#3D4E6C"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1">
+
+                        <com.example.suleyman.project_a.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TARIX"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="#9090a1"
+                            android:layout_marginLeft="7dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="10dp"/>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#3D4E6C"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dateLyt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true"
+                        android:background="@drawable/search_more_lyt_background"
+                        android:layout_weight="1">
+
+                        <com.example.suleyman.project_a.FontTextView
+                            android:id="@+id/dateTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="15.11.2017"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"/>
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_white_calendar"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="3dp"/>
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/regionLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/pressed_layout"
+                    android:clickable="true"
+                    android:layout_marginRight="20dp">
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ƏRAZİ"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#9090a1"
+                        android:layout_marginLeft="7dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_white_expand"
+                        android:layout_marginRight="5dp"/>
+
+                    <com.example.suleyman.project_a.FontTextView
+                        android:id="@+id/selectedRegionTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="SEÇİLMƏYİB"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#3D4E6C"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/search_more_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="13dp"
+                android:clickable="true"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/search_more_lyt_background"
+                android:layout_below="@+id/hidden_search_more_lyt"
+                android:layout_centerHorizontal="true">
+
+                <com.example.suleyman.project_a.FontTextView
+                    android:id="@+id/search_more_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="ƏTRAFLI AXTARIŞ"
+                    android:textColor="#FFFFFF"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/calculate_parent_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:id="@+id/calculateLyt"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/calculate_pressed"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp">
+
+
+            <com.example.suleyman.project_a.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="HESABLA"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
