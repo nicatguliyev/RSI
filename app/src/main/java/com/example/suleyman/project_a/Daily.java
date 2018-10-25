@@ -64,7 +64,7 @@ import layout.Plan;
 
 
 public class Daily extends Fragment {
- // Deyisiklik
+ //
 
     ListView list;
     ProgressBar prg;
